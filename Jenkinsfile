@@ -1,4 +1,4 @@
-node('master')   {
+node('any')   {
       def dockerImageName= 'arabb86/javadedockerapp_$JOB_NAME:$BUILD_NUMBER'
       stage('SCM Checkout'){
          git 'https://github.com/arabb86/java-groovy-docker.git'          
